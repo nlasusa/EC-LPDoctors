@@ -92,6 +92,11 @@
     width: 120px; 
   }
 
+  .slogan {
+    margin-left: 20px; 
+    font-size: 27px; 
+  }
+
   .fa-bars {
     font-size: 40px; 
   }
@@ -249,4 +254,6 @@ span {
 #logo-main {
   margin-right: 10px; 
 }
+}
 /* // end of Doctors & Dispensaries saying */
+
