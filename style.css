@@ -1,0 +1,252 @@
+/* // Nav Bar //  */
+.Navbar {
+  background-color: white;
+  margin-top: 2px; 
+  margin-left: 15px; 
+  display: flex;
+  padding: 1.2em;
+  font: 15px Raleway;
+  color: rgb(0, 0, 0);
+}
+
+.Navbar__Items--center {
+  display: flex;
+  padding: 15px; 
+  justify-content: space-between;
+
+}
+
+#logo-main {
+  width: 160px;
+  border-radius: 0; 
+}
+
+.Navbar__Links { 
+  font: 15px Raleway;
+  color: rgb(0, 0, 0);
+  letter-spacing: .1em; 
+  margin: auto; 
+}
+
+.Navbar__Links:hover {
+  color: rgb(167, 167, 167); 
+  cursor: pointer; 
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 48px; 
+  color: rgb(54, 54, 54); 
+}
+
+#menu {
+  font: 13.5px Raleway;
+}
+
+#STnav:hover {
+  color: rgb(167, 167, 167); 
+}
+
+.fa-search {
+  color: rgb(165, 165, 165); 
+  font-size: 18px; 
+}
+
+/* // Mobile Nav Bar Settings */
+@media only screen and (max-width: 1350px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+    font-size: 18px; 
+  }
+
+  .Navbar__Links {
+    padding: 2px; 
+  }
+    
+.Navbar__Items {
+    display:none;
+    background-color: rgb(245, 243, 243); 
+    margin-bottom: 10px; 
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    padding-right: 8px;
+   } 
+}
+
+@media only screen and (max-width: 430px) {
+
+  #logo-main {
+    width: 120px; 
+  }
+
+  .fa-bars {
+    font-size: 40px; 
+  }
+  
+  #menu {
+    font: 10.5px Raleway;
+  }
+}
+/* // end of nav bar */
+
+
+/* // Doctors & Dispensaries saying */
+:root {
+  /*  Basic style settings  */
+  --bg: linear-gradient(to bottom right, #232435, #3a3c5a);
+  --color: #ffffff;
+  --primary: white;
+
+  /*  delay to all animations  */
+  --delay: 0.5s;
+
+  /*  Logo animation  */
+  --slide-left-duration: 1s;
+  --slide-left-delay: calc(var(--delay) + -0.3s);
+  --slide-left-percent: 30%;
+
+  /* Seperator (Pipe) animation   */
+  --fade-duration: 1s;
+  --fade-delay: calc(var(--delay) + 0.25s);
+
+  /*  Slogan animation  */
+  --slide-right-duration: 0.85s;
+  --slide-right-delay: calc(var(--delay) + 0.25s);
+
+  /*  Bottom boder animation  */
+  --border-duration: 0.5s;
+  --border-delay: calc(var(--delay) + 0.75s);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 40vh;
+}
+
+body::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+span {
+  display: inline-block;
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+
+.pipe {
+  margin-left: 10px;
+}
+
+.pipe.animate {
+  animation: fade var(--fade-duration) var(--fade-delay) both
+    cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.slogan {
+  margin-left: 10px;
+  margin-top: 51px;
+  font-family: 'Raleway';
+  font-size: 35px; 
+}
+
+.slogan.animate {
+  animation: slide-right var(--slide-right-duration) var(--slide-right-delay)
+    both cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.box {
+  display: flex;
+  padding: 5px 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.box.animate {
+  animation: bottom-border var(--border-duration) var(--border-delay) both
+    linear;
+}
+
+.logo.animate {
+  animation: slide-left var(--slide-left-duration) var(--slide-left-delay) both
+    cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(var(--slide-left-percent));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bottom-border {
+  from {
+    border-bottom: 1px solid transparent;
+  }
+  to {
+    border-bottom: 1px solid var(--primary);
+  }
+}
+
+@media only screen and (max-width: 730px) {
+
+.slogan {
+  font-size: 27px; 
+}
+
+#logo-main {
+  margin-right: 10px; 
+}
+/* // end of Doctors & Dispensaries saying */
