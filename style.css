@@ -282,7 +282,7 @@ span {
   height: 500px;
   z-index: 10;
   overflow: hidden;
-  background-color: rgb(245, 243, 243);
+  background-color: rgb(34, 34, 34);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,7 +293,7 @@ span {
   height: auto;
   z-index: 20;
   text-align: left;
-  color: #fff;
+  color: white;
   position: relative;
   top: 30%;
   left: 5%; 
@@ -305,7 +305,7 @@ span {
 }
 .banner__caption h1 {
   font-size: 55px;
-  color: black;
+  color: white;
   font-weight: 100;
   letter-spacing: -1px;
   font-family: 'Roboto', sans-serif;
@@ -318,5 +318,6 @@ span {
 @media only screen and (max-width: 730px) {
   .banner__caption {
     left: 1%; 
+    top: 35%;
   }
   }
