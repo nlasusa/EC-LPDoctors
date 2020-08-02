@@ -1,8 +1,11 @@
+body {
+  background-color: #131313; 
+}
 /* // Nav Bar //  */
 .Navbar {
   background-color: white;
-  margin-top: 2px; 
-  margin-left: 15px; 
+  padding-top: 2px; 
+  padding-left: 15px; 
   display: flex;
   padding: .7em;
   font: 15px Raleway;
@@ -20,7 +23,6 @@
   width: 160px;
   border-radius: 0; 
 }
-
 
 .Navbar__Links { 
   font: 15px Raleway;
@@ -256,9 +258,9 @@ p {
 
 /* // Split Landing Page - Patient / Doctor sections */
 .container {
-  margin-top: 10px; 
+  margin-top: 45px; 
   display: flex;
-  height: 70vh;
+  height: 65vh;
   width: 100vw;
 }
 
@@ -275,7 +277,8 @@ p {
 }
 
 #split-2 {
-  background-color: #1f1f1f;
+  background-color: #2055c7; 
+  /* background-color: #1f1f1f; */
 }
 
 .split-heading {
