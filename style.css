@@ -344,7 +344,7 @@ p {
 /* Split Landing Page - Patient / Doctor sections mobile settings  */
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
-    font-size: 22px;
+    font-size: 18px;
     }
 
   .btn {
@@ -358,3 +358,5 @@ p {
   }
 }
 /* End of Split Landing Page - Patient / Doctor sections mobile settings  */
+
+
