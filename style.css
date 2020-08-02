@@ -205,8 +205,9 @@ span {
 /* // Doctors & Dispensaries Text Next to Logo Mobile Settings */
 @media only screen and (max-width: 430px) {
   .slogan {
-    font-size: 25px; 
+    font-size: 22px; 
     margin-left: 40px; 
+    margin-top: 41px;
   }
   
   #logo-main {
@@ -345,7 +346,7 @@ p {
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
     font-size: 18px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     }
 
   .btn {
