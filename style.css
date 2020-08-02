@@ -206,7 +206,7 @@ span {
 @media only screen and (max-width: 430px) {
   .slogan {
     font-size: 25px; 
-    margin-left: 10px; 
+    margin-left: 40px; 
   }
   
   #logo-main {
@@ -345,6 +345,7 @@ p {
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
     font-size: 18px;
+    letter-spacing: 5px;
     }
 
   .btn {
