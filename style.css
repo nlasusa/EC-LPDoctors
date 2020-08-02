@@ -200,7 +200,19 @@ span {
     transform: none;
   }
 }
+/* // End of Doctors & Dispensaries Text Next to Logo */
 
+/* // Doctors & Dispensaries Text Next to Logo Mobile Settings */
+@media only screen and (max-width: 430px) {
+  .slogan {
+    font-size: 25px; 
+    margin-left: 10px; 
+  }
+  
+  #logo-main {
+    margin-right: 10px; 
+    }
+  }
 @media only screen and (max-width: 730px) {
 .slogan {
   font-size: 27px; 
@@ -208,10 +220,9 @@ span {
 
 #logo-main {
   margin-right: 10px; 
+  }
 }
-}
-/* // End of Doctors & Dispensaries Text Next to Logo */
-
+/* // End of Doctors & Dispensaries Text Next to Logo Mobile Settings */
 
 section {
   width: 100%;
