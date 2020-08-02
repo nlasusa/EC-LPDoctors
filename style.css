@@ -249,7 +249,7 @@ p {
 
 /* // Split Landing Page - Patient / Doctor sections */
 .container {
-  margin-top: 2px; 
+  margin-top: 10px; 
   display: flex;
   height: 70vh;
   width: 100vw;
