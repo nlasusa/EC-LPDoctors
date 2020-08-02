@@ -205,15 +205,11 @@ span {
 /* // Doctors & Dispensaries Text Next to Logo Mobile Settings */
 @media only screen and (max-width: 430px) {
   .slogan {
-    font-size: 22px; 
+    font-size: 25px; 
     margin-left: 40px; 
     margin-top: 41px;
   }
-  
-  #logo-main {
-    margin-right: 10px; 
-    }
-  }
+}
 @media only screen and (max-width: 730px) {
 .slogan {
   font-size: 27px; 
