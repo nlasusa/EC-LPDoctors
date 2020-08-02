@@ -89,9 +89,8 @@
 }
 
 @media only screen and (max-width: 430px) {
-
   #logo-main {
-    width: 120px; 
+    width: 110px; 
   }
 
   .fa-bars {
@@ -207,7 +206,7 @@ span {
   .slogan {
     font-size: 25px; 
     margin-left: 40px; 
-    margin-top: 41px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -342,7 +341,7 @@ p {
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
     font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     }
 
   .btn {
