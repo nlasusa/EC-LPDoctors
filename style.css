@@ -55,6 +55,7 @@
   color: rgb(165, 165, 165); 
   font-size: 18px; 
 }
+/* // End of Nav Bar //  */
 
 /* // Mobile Nav Bar Settings */
 @media only screen and (max-width: 1350px) {
@@ -101,10 +102,10 @@
     font: 10.5px Raleway;
   }
 }
-/* // end of nav bar */
+/* // End of Mobile Nav Bar Settings // 
 
 
-/* // Doctors & Dispensaries saying */
+/* // Doctors & Dispensaries Text Next to Logo */
 :root {
   /*  Basic style settings  */
   --bg: linear-gradient(to bottom right, #232435, #3a3c5a);
@@ -112,7 +113,7 @@
   --primary: white;
 
   /*  delay to all animations  */
-  --delay: 0.5s;
+  --delay: 0.3s;
 
   /*  Logo animation  */
   --slide-left-duration: 1s;
@@ -135,8 +136,6 @@
 * {
   box-sizing: border-box;
 }
-
-
 span {
   display: inline-block;
   font-size: 1.8rem;
@@ -211,7 +210,8 @@ span {
   margin-right: 10px; 
 }
 }
-/* // end of Doctors & Dispensaries saying */
+/* // End of Doctors & Dispensaries Text Next to Logo */
+
 
 section {
   width: 100%;
@@ -243,9 +243,98 @@ section {
 p {
   font-size: 1.5em;
   font-weight: 500;
-  color: #089e14;
+  color: #0e9119;
 }
 
 
+/* // Split Landing Page - Patient / Doctor sections */
+.container {
+  margin-top: 2px; 
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+}
 
+.split-section {
+  height: 100%;
+  color: white; 
+  width: 100%;
+  position: relative;
+  transition: all 1s;
+}
 
+#split-1 {
+  background-color: #0e7216;
+}
+
+#split-2 {
+  background-color: #1f1f1f;
+}
+
+.split-heading {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.split-heading-main {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 7px
+}
+
+.split-heading-sub {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 40px;
+  letter-spacing: 9px;
+}
+
+.split-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 75%;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 7px 20px;
+  transition: all .5s;
+  position: relative;
+}
+
+.btn:hover {
+  padding: 7px 40px;
+}
+
+.btn-outline-white {
+  border: 3px white solid;
+}
+
+.split-section:hover {
+  width: 150%;
+  z-index: 1;
+}
+
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* // End of Split Landing Page - Patient / Doctor sections */
+
+/* Split Landing Page - Patient / Doctor sections mobile settings  */
+
+@media only screen and (max-width: 730px) {
+.split-heading-sub {
+  font-size: 30px;
+}
+}
+/* End of Split Landing Page - Patient / Doctor sections mobile settings  */
