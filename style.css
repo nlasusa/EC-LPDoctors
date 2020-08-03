@@ -19,7 +19,7 @@
 }
 
 #logo-main {
-  margin-top: 20px; 
+  margin-top: 15px; 
 }
 
 .Navbar__Links { 
@@ -257,7 +257,7 @@ p {
 
 /* // Split Landing Page - Patient / Doctor sections */
 .container {
-  margin-top: 11px; 
+  margin-top: 13px; 
   display: flex;
   height: 65vh;
   width: 100vw;
