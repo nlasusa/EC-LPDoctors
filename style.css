@@ -89,9 +89,9 @@
 }
 
 @media only screen and (max-width: 430px) {
-  #logo-main {
+  /* #logo-main {
     width: 102px; 
-  }
+  } */
 
   .fa-bars {
     font-size: 40px; 
