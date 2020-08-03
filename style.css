@@ -131,15 +131,14 @@
 }
 span {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   overflow: hidden;
 }
 
 .slogan {
   margin-left: 10px;
-  margin-top: 60px;
-  font-family: 'Raleway';
-  font-size: 35px; 
+  margin-top: 62px;
+  font-family: 'Raleway'; 
 }
 
 .slogan.animate {
@@ -199,8 +198,7 @@ span {
 
 @media only screen and (max-width: 430px) {
   .slogan {
-    font-size: 25px; 
-    margin-left: 40px; 
+    font-size: 1.5rem; 
     margin-top: 20px;
   }
 
@@ -215,7 +213,7 @@ span {
 
 @media only screen and (max-width: 730px) {
 .slogan {
-  font-size: 29px; 
+  font-size: 1.5rem; 
   margin-top: 58px;
   }
 }
