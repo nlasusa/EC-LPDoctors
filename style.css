@@ -203,6 +203,14 @@ span {
     margin-left: 40px; 
     margin-top: 20px;
   }
+
+  #logo-main {
+    margin-left: 20px; 
+  }
+
+  .container {
+    margin-top: 5px; 
+  }
 }
 
 @media only screen and (max-width: 730px) {
