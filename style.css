@@ -1,4 +1,5 @@
 
+
 /* // Nav Bar //  */
 .Navbar {
   background-color: white;
@@ -18,8 +19,7 @@
 }
 
 #logo-main {
-  width: 160px;
-  border-radius: 0; 
+  margin-top: 20px; 
 }
 
 .Navbar__Links { 
@@ -72,7 +72,7 @@
 .Navbar__Items {
     display:none;
     background-color: rgb(245, 243, 243); 
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
   }
     
 .Navbar__ToggleShow {
@@ -107,9 +107,7 @@
 /* // Doctors & Dispensaries Text Next to Logo */
 :root {
   /*  Basic style settings  */
-  --bg: linear-gradient(to bottom right, #232435, #3a3c5a);
-  --color: #ffffff;
-  --primary: white;
+
 
   /*  delay to all animations  */
   --delay: 0.3s;
@@ -143,7 +141,7 @@ span {
 
 .slogan {
   margin-left: 10px;
-  margin-top: 51px;
+  margin-top: 60px;
   font-family: 'Raleway';
   font-size: 35px; 
 }
@@ -202,6 +200,7 @@ span {
 /* // End of Doctors & Dispensaries Text Next to Logo */
 
 /* // Doctors & Dispensaries Text Next to Logo Mobile Settings */
+
 @media only screen and (max-width: 430px) {
   .slogan {
     font-size: 25px; 
@@ -209,14 +208,12 @@ span {
     margin-top: 20px;
   }
 }
+
 @media only screen and (max-width: 730px) {
 .slogan {
-  font-size: 27px; 
-}
-
-#logo-main {
-  margin-right: 10px; 
-  }
+  font-size: 29px; 
+  margin-top: 58px;
+  } 
 }
 /* // End of Doctors & Dispensaries Text Next to Logo Mobile Settings */
 
@@ -256,7 +253,7 @@ p {
 
 /* // Split Landing Page - Patient / Doctor sections */
 .container {
-  margin-top: 12px; 
+  margin-top: 11px; 
   display: flex;
   height: 65vh;
   width: 100vw;
