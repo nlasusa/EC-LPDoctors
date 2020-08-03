@@ -89,10 +89,6 @@
 }
 
 @media only screen and (max-width: 430px) {
-  /* #logo-main {
-    width: 102px; 
-  } */
-
   .fa-bars {
     font-size: 40px; 
   }
@@ -213,7 +209,7 @@ span {
 .slogan {
   font-size: 29px; 
   margin-top: 58px;
-  } 
+  }
 }
 /* // End of Doctors & Dispensaries Text Next to Logo Mobile Settings */
 
