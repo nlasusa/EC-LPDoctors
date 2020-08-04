@@ -198,7 +198,7 @@ span {
 
 @media only screen and (max-width: 430px) {
   .slogan {
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     margin-top: 20px;
   }
 
@@ -207,7 +207,7 @@ span {
   }
 
   .container {
-    margin-top: 5px; 
+    margin-top: -5px; 
   }
 }
 
