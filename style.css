@@ -253,7 +253,7 @@ p {
 }
 
 
-/* // Split Landing Page - Patient / Doctor sections */
+/* <!-- // Patient-Doctor Portal Entry LP --> */
 .container {
   margin-top: 11px; 
   display: flex;
@@ -334,9 +334,13 @@ p {
   background-color: #fff;
   color: #000;
 }
-/* // End of Split Landing Page - Patient / Doctor sections */
 
-/* Split Landing Page - Patient / Doctor sections mobile settings  */
+.fa-comment-medical {
+  color: red; 
+}
+/* <!-- // End of Patient-Doctor Portal Entry LP --> */
+
+/* <!-- // Patient-Doctor Portal Entry LP Mobile Settings --> */
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
     font-size: 18px;
@@ -353,6 +357,6 @@ p {
   font-size: 30px;
   }
 }
-/* End of Split Landing Page - Patient / Doctor sections mobile settings  */
+/* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
 
 
