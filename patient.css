@@ -1,0 +1,33 @@
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #1f1f1f;
+    height: 20vh;
+  }
+  
+  .intro {
+    height: 50vh;
+  }
+  
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .intro h1 {
+    font-size: 3.4em;
+    font-family: 'Raleway';
+    display: block;
+    color: white;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 1.4em;
+    font-family: 'Raleway'; 
+    color: #0e9119;
+  }
+  

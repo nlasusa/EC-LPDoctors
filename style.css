@@ -3,265 +3,52 @@ body {
   font-family: 'Raleway';
 }
 
+/* // logo heartbeat movement  */
 #QuickMMJ {
   margin-left: 178px;
   font-size: 40px;
   margin-top: 75px;
   letter-spacing: 4px;
 }
-
-/* // Nav Bar //  */
-.Navbar {
-  background-color: white;
-  margin-top: 2px; 
-  margin-left: 15px; 
-  display: flex;
-  padding: .7em;
-  font: 15px Raleway;
-  color: rgb(0, 0, 0);
+.scan-icon {
+  position: relative;
+  margin-top: -115px;
 }
-
-.Navbar__Items--center {
-  display: flex;
-  padding: 15px; 
-  justify-content: space-between;
-
-}
-
-#logo-main {
-  margin-top: 20px; 
-}
-
-.Navbar__Links { 
-  font: 15px Raleway;
-  color: rgb(0, 0, 0);
-  letter-spacing: .1em; 
-  margin: auto; 
-}
-
-.Navbar__Links:hover {
-  color: rgb(167, 167, 167); 
-  cursor: pointer; 
-}
-
-.Navbar__Link-toggle {
-  display: none;
-}
-
-.fa-bars {
-  font-size: 48px; 
-  color: rgb(54, 54, 54); 
-}
-
-#menu {
-  font: 13.5px Raleway;
-}
-
-#STnav:hover {
-  color: rgb(167, 167, 167); 
-}
-
-.fa-search {
-  color: rgb(165, 165, 165); 
-  font-size: 18px; 
-}
-/* // End of Nav Bar //  */
-
-/* // Mobile Nav Bar Settings */
-@media only screen and (max-width: 1350px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-    font-size: 18px; 
-  }
-
-  .Navbar__Links {
-    padding: 2px; 
-  }
-    
-.Navbar__Items {
-    display:none;
-    background-color: rgb(245, 243, 243); 
-    margin-bottom: 5px; 
-  }
-    
-.Navbar__ToggleShow {
-    display: flex;
-  }
-    
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-    padding-right: 8px;
-   } 
-}
-
-@media only screen and (max-width: 430px) {
-  .fa-bars {
-    font-size: 40px; 
-  }
-  
-  #menu {
-    font: 10.5px Raleway;
-  }
-}
-/* // End of Mobile Nav Bar Settings // 
-
-
-/* // Doctors & Dispensaries Text Next to Logo */
-:root {
-  /*  Basic style settings  */
-
-
-  /*  delay to all animations  */
-  --delay: 0.3s;
-
-  /*  Logo animation  */
-  --slide-left-duration: 1s;
-  --slide-left-delay: calc(var(--delay) + -0.3s);
-  --slide-left-percent: 30%;
-
-  /* Seperator (Pipe) animation   */
-  --fade-duration: 1s;
-  --fade-delay: calc(var(--delay) + 0.25s);
-
-  /*  Slogan animation  */
-  --slide-right-duration: 0.85s;
-  --slide-right-delay: calc(var(--delay) + 0.25s);
-
-  /*  Bottom boder animation  */
-  --border-duration: 0.5s;
-  --border-delay: calc(var(--delay) + 0.75s);
-}
-
-* {
-  box-sizing: border-box;
-}
-span {
-  display: inline-block;
-  font-size: 1.75rem;
+.scan-icon .monitor {
+  position: absolute;
   overflow: hidden;
+  width: 10em;
+  height: 10em;
+  border-radius: 10px;
+  z-index: 999;
+}
+.scan-icon .scan-box {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 0%, white 10%, rgba(255, 255, 255, 0));
+  z-index: 99;
+  animation: slideAcross 2s infinite;
+}
+.scan-icon .heartbeat {
+  position: absolute;
+  top: -95px;
+  left: -15px;
+  z-index: 9;
+}
+.scan-icon .heartbeat svg {
+  width: 11em;
 }
 
-.slogan {
-  margin-left: 10px;
-  margin-top: 62px;
-  font-family: 'Raleway'; 
-}
-
-.slogan.animate {
-  animation: slide-right var(--slide-right-duration) var(--slide-right-delay)
-    both cubic-bezier(0.2, 0, 0.2, 1);
-}
-
-.box {
-  display: flex;
-  padding: 5px 2px;
-  border-bottom: 1px solid transparent;
-}
-
-.box.animate {
-  animation: bottom-border var(--border-duration) var(--border-delay) both
-    linear;
-}
-
-.logo.animate {
-  animation: slide-left var(--slide-left-duration) var(--slide-left-delay) both
-    cubic-bezier(0.2, 0, 0.2, 1);
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
+@keyframes slideAcross {
+  0% {
+    left: -850px;
   }
-  to {
-    opacity: 1;
+  100% {
+    left: 190px;
   }
 }
-
-@keyframes slide-left {
-  from {
-    opacity: 0;
-    transform: translateX(var(--slide-left-percent));
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes slide-right {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-/* // End of Doctors & Dispensaries Text Next to Logo */
-
-/* // Doctors & Dispensaries Text Next to Logo Mobile Settings */
-
-@media only screen and (max-width: 430px) {
-  .slogan {
-    font-size: 1.1rem; 
-    margin-top: 20px;
-  }
-
-  #logo-main {
-    margin-left: 0px; 
-  }
-
-  .container {
-    margin-top: -8px; 
-  }
-}
-
-@media only screen and (max-width: 730px) {
-.slogan {
-  font-size: 1.5rem; 
-  margin-top: 58px;
-  }
-}
-/* // End of Doctors & Dispensaries Text Next to Logo Mobile Settings */
-
-section {
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #1f1f1f;
-  height: 20vh;
-}
-
-.intro {
-  height: 50vh;
-}
-
-.content {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.intro h1 {
-  font-size: 3.4em;
-  font-family: 'Raleway';
-  display: block;
-  color: white;
-  font-weight: 300;
-}
-
-p {
-  font-size: 1.4em;
-  font-family: 'Raleway'; 
-  color: #0e9119;
-}
-
+/* // end of logo heartbeat movement */
 
 /* <!-- // Patient-Doctor Portal Entry LP --> */
 .container {
@@ -284,7 +71,6 @@ p {
 }
 
 #split-2 {
-  /* background-color: #1e4cb1;  */
   background-color: #1f1f1f;
 }
 
@@ -364,6 +150,9 @@ p {
   .btn {
     font-size: 12px;
   }
+  #QuickMMJ {
+    font-size: 22px;
+  }
   }
 
 @media only screen and (max-width: 1030px) {
@@ -394,81 +183,3 @@ p {
 }
 /* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
 
-
-.outer {
-  position: relative;
-  color: white; 
-  font-family: 'Raleway';
-  font-size: 18px; 
-}
-
-.bot {
-  width: 400px; 
-  padding-top: 30px; 
-  height: 20vh;
-  text-align: center; 
-  background-color: green;
-}
-
-.top {
-  width: 400px; 
-  padding-top: 30px; 
-  height: 20vh;
-  text-align: center; 
-  background-color: #1f1f1f;
-}
-
-#btn-mobile {
-  margin-top: 10px; 
-  margin: auto; 
-  font-family: 'Raleway';
-  padding: 3px; 
-  width: 120px; 
-  font-size: 16px; 
-  color: black;
-  background-color: white; 
-}
-
-
-
-#a {
-  color: green; 
-}
-.scan-icon {
-  position: relative;
-  margin-top: -115px;
-}
-.scan-icon .monitor {
-  position: absolute;
-  overflow: hidden;
-  width: 10em;
-  height: 10em;
-  border-radius: 10px;
-  z-index: 999;
-}
-.scan-icon .scan-box {
-  position: absolute;
-  width: 480px;
-  height: 200px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 0%, white 10%, rgba(255, 255, 255, 0));
-  z-index: 99;
-  animation: slideAcross 2s infinite;
-}
-.scan-icon .heartbeat {
-  position: absolute;
-  top: -95px;
-  left: -15px;
-  z-index: 9;
-}
-.scan-icon .heartbeat svg {
-  width: 11em;
-}
-
-@keyframes slideAcross {
-  0% {
-    left: -850px;
-  }
-  100% {
-    left: 190px;
-  }
-}
