@@ -1,4 +1,7 @@
 
+body {
+  font-family: 'Raleway';
+}
 
 /* // Nav Bar //  */
 .Navbar {
@@ -335,7 +338,7 @@ p {
   color: #000;
 }
 
-.fa-comment-medical {
+.fa-comment-medical, .fa-user-md {
   color: red; 
 }
 /* <!-- // End of Patient-Doctor Portal Entry LP --> */
@@ -360,3 +363,36 @@ p {
 /* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
 
 
+.outer {
+  position: relative;
+  color: white; 
+  font-family: 'Raleway';
+  font-size: 18px; 
+}
+
+.bot {
+  width: 400px; 
+  padding-top: 30px; 
+  height: 20vh;
+  text-align: center; 
+  background-color: green;
+}
+
+.top {
+  width: 400px; 
+  padding-top: 30px; 
+  height: 20vh;
+  text-align: center; 
+  background-color: #1f1f1f;
+}
+
+#btn-mobile {
+  margin-top: 10px; 
+  margin: auto; 
+  font-family: 'Raleway';
+  padding: 3px; 
+  width: 120px; 
+  font-size: 16px; 
+  color: black;
+  background-color: white; 
+}
