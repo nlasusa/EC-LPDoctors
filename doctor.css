@@ -1,0 +1,47 @@
+#QuickMMJ {
+    margin-left: 178px;
+    font-size: 40px;
+    margin-top: 75px;
+    letter-spacing: 4px;
+    font-family: 'Raleway';
+  }
+  
+  .scan-icon {
+    position: relative;
+    margin-top: -115px;
+  }
+  .scan-icon .monitor {
+    position: absolute;
+    overflow: hidden;
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  .scan-icon .scan-box {
+    position: absolute;
+    width: 480px;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 0%, white 10%, rgba(255, 255, 255, 0));
+    z-index: 99;
+    animation: slideAcross 2s infinite;
+  }
+  .scan-icon .heartbeat {
+    position: absolute;
+    top: -95px;
+    left: -15px;
+    z-index: 9;
+  }
+  .scan-icon .heartbeat svg {
+    width: 11em;
+  }
+  
+  @keyframes slideAcross {
+    0% {
+      left: -850px;
+    }
+    100% {
+      left: 190px;
+    }
+  }
+  
