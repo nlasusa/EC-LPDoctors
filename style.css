@@ -369,6 +369,9 @@ p {
     border: none; 
     margin-bottom: -70px; 
   }
+  .split-section:hover {
+    width: 125%; 
+  }
 }
  
 @media only screen and (max-width: 760px) {
@@ -377,6 +380,9 @@ p {
   }
   #doc-main2 {
     margin-top: -5px;
+  }
+  .split-section:hover {
+    width: 100%; 
   }
 }
 /* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
