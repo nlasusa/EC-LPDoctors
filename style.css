@@ -341,6 +341,10 @@ p {
 .fa-comment-medical, .fa-user-md {
   color: red; 
 }
+
+#doctor-login {
+  margin-right: 5px;  
+}
 /* <!-- // End of Patient-Doctor Portal Entry LP --> */
 
 /* <!-- // Patient-Doctor Portal Entry LP Mobile Settings --> */
@@ -355,9 +359,15 @@ p {
   }
   }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 830px) {
 .split-heading-sub {
   font-size: 30px;
+  }
+
+  #doctor-login, #patient-seemore {
+    font-size: 10px; 
+    border: none; 
+    margin-bottom: -70px; 
   }
 }
 /* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
