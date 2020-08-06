@@ -1,3 +1,4 @@
+/* // first patient banner  */
 section {
     width: 100%;
     padding: 0 7%;
@@ -50,4 +51,31 @@ section {
     font-size: 1.2em; 
   }
 }
+/* // end of first patient banner */
+
+/* // ad section */
+.ad-grid {
+  border: 10px solid #fff;
+  max-width: 1200;
+  overflow: hidden;
+  width: 100%;
+}
+.ad-grid .ad {
+  border: 10px solid #fff;
+  float: left;
+  overflow: hidden;
+}
+.ad-grid .medium-6 {
+  border-right: 20px solid #fff;
+  width: 50%;
+}
+.ad-grid .medium-3 {
+  width: 25%;
+}
+.ad-grid img {
+  height: auto;
+  width: 100%;
+}
+
+/* end of ad section  */
   
