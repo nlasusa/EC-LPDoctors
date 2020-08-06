@@ -30,4 +30,10 @@ section {
     font-family: 'Raleway'; 
     color: #0e9119;
   }
+
+  @media only screen and (max-width: 430px) {
+  .intro h1 {
+    font-size: 2.9em;
+  }
+}
   
