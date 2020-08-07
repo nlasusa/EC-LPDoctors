@@ -1,6 +1,9 @@
 
 body {
   font-family: 'Raleway';
+  background-image: url("assets/images/background8.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
 }
 
 /* // logo heartbeat movement  */
@@ -62,9 +65,9 @@ body {
 
 /* <!-- // Patient-Doctor Portal Entry LP --> */
 .container {
-  margin-top: 11px; 
+  margin-top: 20px; 
   display: flex;
-  height: 65vh;
+  height: 62vh;
   width: 100vw;
 }
 
@@ -74,26 +77,32 @@ body {
   width: 100%;
   position: relative;
   transition: all 1s;
+  opacity: none; 
 }
 
 #split-1 {
-  background-color: #0e7216;
+  background-color: #0c6d14;
+  opacity: 0.69; 
 }
 
 #split-2 {
-  background-color: #1f1f1f;
+  background-color: #1a1919;
+  opacity: 0.69; 
 }
 
 .split-heading {
   text-transform: uppercase;
   margin-bottom: 35px;
+  opacity: none; 
 }
 
 .split-heading-main {
   display: block;
+  opacity: none; 
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: 7px
+  letter-spacing: 7px;
+  opacity: none; 
 }
 
 .split-heading-sub {
@@ -101,6 +110,7 @@ body {
   font-weight: 200;
   font-size: 40px;
   letter-spacing: 9px;
+  opacity: none; 
 }
 
 .split-box {
@@ -193,6 +203,12 @@ body {
   }
   .split-section:hover {
     width: 100%; 
+  }
+  body {
+    background-image: none; 
+  }
+  #split-1, #split-2 {
+    opacity: 0.73; 
   }
 }
 @media only screen and (max-width: 1000px) {

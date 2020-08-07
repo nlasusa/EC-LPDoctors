@@ -1,3 +1,7 @@
+body {
+  background-image: none; 
+}
+
 /* // first patient banner  */
 section {
     width: 100%;
@@ -5,8 +9,9 @@ section {
     display: table;
     margin: 0;
     max-width: none;
-    background-color: #1f1f1f;
+    background-color: rgb(240, 240, 240); 
     height: 20vh;
+    opacity: 0.8;
   }
   
   .intro {
@@ -22,7 +27,7 @@ section {
     font-size: 3.4em;
     font-family: 'Raleway';
     display: block;
-    color: white;
+    color: black;
     font-weight: 300;
   }
   
@@ -30,6 +35,11 @@ section {
     font-size: 1.4em;
     font-family: 'Raleway'; 
     color: #0e9119;
+  }
+
+  span1 {
+    color: #007bff; 
+    letter-spacing: 5px;
   }
 
   @media only screen and (max-width: 430px) {

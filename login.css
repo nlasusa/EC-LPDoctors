@@ -9,7 +9,8 @@
     max-width: 490px;
     padding: 15px 35px 45px;
     margin: 0 auto;
-    background-color: #1f1f1f;
+    background-color: #2e2e2e;
+    opacity: none; 
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
   
