@@ -10,6 +10,16 @@ body {
   margin-top: 75px;
   letter-spacing: 4px;
 }
+#OneStop {
+  float: right; 
+  margin-top: -41px;
+  margin-right: 80px; 
+  font-size: 19px; 
+}
+#cannibis {
+  margin-top: -15px;
+  padding-left: 5px; 
+}
 .scan-icon {
   position: relative;
   margin-top: -115px;
@@ -185,5 +195,25 @@ body {
     width: 100%; 
   }
 }
+@media only screen and (max-width: 1000px) {
+#OneStop {
+  margin-top: -2px;
+  margin-left: 60px; 
+  font-size: 16px; 
+  }
+} 
+
+@media only screen and (max-width: 500px) {
+  #OneStop {
+    margin-top: -2px;
+    margin-left: 180px; 
+    font-size: 15px; 
+    line-height: -10px; 
+    }
+
+    #cannibis {
+      margin-top: -3px;
+    }
+  } 
 /* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
 
