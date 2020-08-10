@@ -2,6 +2,7 @@
 #accordion {
     margin-top: 30px; 
     font-family: 'Raleway';
+    margin-bottom: 60px; 
 }
 .panel-group .panel {
     margin: auto; 
@@ -40,6 +41,12 @@
     border-top-color: #EEEEEE;
     padding: 10px; 
 }
+
+.panel-body {
+    background-color: white;
+    opacity: 0.8; 
+}
+
 .fa-plus {
     float: right; 
 }
