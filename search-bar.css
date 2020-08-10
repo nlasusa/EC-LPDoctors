@@ -19,8 +19,4 @@
   }
   /* // end of search bar - zip code  */
 
-  @media only screen and (max-width: 430px) {
-    .search-container {
-        margin-right: 120px; 
-    }
-    }
+ 
