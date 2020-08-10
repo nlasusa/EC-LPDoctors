@@ -1,0 +1,26 @@
+/* // search bar - zip code  */
+.search-container{
+    float: right;
+    padding: 6px 20px;
+    margin-top: -163px;
+    font-size: 15.5px;
+    border-radius: 20px; 
+    cursor: pointer;
+  }
+  
+  .search-container button {
+    float: right;
+    margin-right: 16px;
+    margin-top: 3.5px; 
+    font-size: 17px;
+    border: none;
+    background-color: white; 
+    cursor: pointer;
+  }
+  /* // end of search bar - zip code  */
+
+  @media only screen and (max-width: 430px) {
+    .search-container {
+        margin-right: 120px; 
+    }
+    }

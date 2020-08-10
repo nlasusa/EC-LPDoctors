@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="patient.css">
     <link rel="stylesheet" href="facts-stats.css">
+    <link rel="stylesheet" href="search-bar.css">
      <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -45,6 +46,13 @@
 </svg> 
 </div><br><br><br><br><br><br><br>
 <!-- // End of MMJ logo + heartbeat SVG + slogan header //  -->
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search by Zip Code" name="search" autocomplete="off">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
 
 <section class="intro">  
     <div class="content" data-aos="fade-left">
