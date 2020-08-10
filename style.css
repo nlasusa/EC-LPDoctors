@@ -160,7 +160,7 @@ body {
 }
 /* <!-- // End of Patient-Doctor Portal Entry LP --> */
 
-/* <!-- // Patient-Doctor Portal Entry LP Mobile Settings --> */
+/* <!-- // Patient-Doctor Portal Entry LP Media Settings --> */
 @media only screen and (max-width: 430px) {
   .split-heading-sub {
     font-size: 18px;
@@ -238,5 +238,5 @@ body {
       line-height: -10px; 
       }
     }
-/* <!-- // End of Patient-Doctor Portal Entry LP Mobile Settings --> */
+/* <!-- // End of Patient-Doctor Portal Entry LP Media Settings --> */
 
