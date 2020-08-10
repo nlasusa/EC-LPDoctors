@@ -23,7 +23,7 @@
   
   .form-signing-heading,
   .checkbox {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white; 
   }
   
@@ -62,6 +62,11 @@
   }
 .btn-block:hover {
     padding: 5px;
+}
+
+.form-signing-sub-heading {
+  color: white; 
+  margin-bottom: 10px; 
 }
 
 
