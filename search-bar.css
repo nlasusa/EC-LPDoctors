@@ -11,7 +11,7 @@
   .search-container button {
     float: right;
     margin-right: 16px;
-    margin-top: 2.5px; 
+    margin-top: 2px; 
     font-size: 17px;
     border: none;
     background-color: white; 
@@ -21,7 +21,11 @@
 
   @media only screen and (max-width: 430px) {
     .search-container {
-      margin-top: -150px; 
+      margin-top: -140px; 
       font-size: 10px; 
     }
+    .search-container button {
+      float: right;
+      margin-right: 20px;
+      margin-top: 1px; 
   }
