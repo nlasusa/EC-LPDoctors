@@ -204,9 +204,6 @@ body {
   .split-section:hover {
     width: 100%; 
   }
-  body {
-    background-image: none; 
-  }
   #split-1, #split-2 {
     opacity: 0.73; 
   }
