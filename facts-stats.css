@@ -9,7 +9,7 @@
     border-radius: 0;
     box-shadow: none;
     border-color: #EEEEEE;
-    width: 700px; 
+    width: 1000px; 
 }
 
 .panel-default > .panel-heading {
@@ -51,9 +51,16 @@
     float: right; 
 }
 
+@media only screen and (max-width: 1000px) {
+    .panel-group .panel, .panel-title {
+        width: 800px; 
+        font-size: 15px; 
+    }
+}
+
 @media only screen and (max-width: 760px) {
     .panel-group .panel, .panel-title {
-        width: 400px; 
+        width: 420px; 
         font-size: 15px; 
     }
 }
