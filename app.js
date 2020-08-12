@@ -10,7 +10,7 @@ $("#doctor-login").on('click', function(){
 });
 
 $("#doctor-signup").on('click', function(){
-  window.location = "doctor.html";
+  window.location = "sign-up.html";
 });
 
 $(".seeFAQS").on('click', function(){

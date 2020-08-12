@@ -273,6 +273,9 @@ body {
     .fa-circle {
       margin-left: -180px; 
     }
+    #bar-num {
+      font-size: 12px; 
+    }
   }
   @media only screen and (max-width: 760px) {
     #bar1-title {
@@ -284,6 +287,9 @@ body {
     }
     .fa-circle {
       margin-left: -215px; 
+    }
+    #bar-num {
+      font-size: 14px; 
     }
   }
   /* end of mobile bar graph animation  */
