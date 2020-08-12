@@ -63,28 +63,125 @@ section {
 }
 /* // end of first patient banner */
 
-/* // ad section */
-.ad-grid {
-  border: 10px solid #fff;
-  max-width: 1200;
-  overflow: hidden;
-  width: 100%;
+/* <!-- // collapsible section  --> */
+#accordion {
+  margin-top: 30px; 
+  font-family: 'Raleway';
+  margin-bottom: 30px; 
 }
-.ad-grid .ad {
-  border: 10px solid #fff;
-  float: left;
-  overflow: hidden;
+.panel-group .panel {
+  margin: auto; 
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+  width: 750px; 
 }
-.ad-grid .medium-6 {
-  border-right: 20px solid #fff;
-  width: 50%;
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: white;
+  background-color: #0c6d14;
+  opacity: 0.8; 
+  border-color: #EEEEEE;
 }
-.ad-grid .medium-3 {
-  width: 25%;
+
+.panel-title {
+  font-size: 17px;
 }
-.ad-grid img {
-  height: auto;
-  width: 100%;
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  color: white; 
+  text-decoration: none;
 }
-/* end of ad section  */
-  
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+  padding: 10px; 
+}
+
+.panel-body {
+  background-color: white;
+  opacity: 0.8; 
+}
+
+.fa-plus {
+  float: right; 
+}
+
+@media only screen and (max-width: 760px) {
+  .panel-group .panel, .panel-title {
+      width: 430px; 
+      font-size: 15px; 
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .panel-group .panel, .panel-title {
+      width: 375px; 
+      font-size: 15px; 
+  }
+}
+/* <!-- // end of collapsible section  --> */
+
+/* /* // numbers count section  */
+.counter {
+  margin-top: 0px; 
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: 'Raleway'; 
+}
+
+.count-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px; 
+}
+
+.count-text {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  font-size: 20px; 
+  float: none;
+  display: table;
+  color: #007BFF; 
+}
+/* // numbers count section */
+
+/* // numbers count mobile  */
+@media only screen and (max-width: 430px) {
+  .count-text {
+      font-size: 16px;
+  }
+  .count-title {
+      font-size: 28px; 
+  }
+}
+/* // end of numbers count section mobile //  */
+
+.seeFAQS {
+  font-size: 20px; 
+  text-align: center; 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  color: rgb(24, 24, 24);
+}
+
+.seeFAQS:hover {
+  cursor: pointer; 
+  color: #007BFF; 
+}

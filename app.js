@@ -12,6 +12,10 @@ $("#doctor-login").on('click', function(){
 $("#doctor-signup").on('click', function(){
   window.location = "doctor.html";
 });
+
+$(".seeFAQS").on('click', function(){
+	window.location = "facts-stats.html";
+  });
 // end of page navigation on click events// 
 
 
