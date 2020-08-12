@@ -255,7 +255,6 @@ body {
   span {
     color: black; 
     font-family: 'Raleway';
-  
   }
 
   #bar1-sub {
@@ -271,7 +270,7 @@ body {
   /* // mobile bar graph animation  */
   @media only screen and (max-width: 430px) {
     .fa-circle {
-      margin-left: -180px; 
+      margin-left: 30px;
     }
     #bar-num {
       font-size: 12px; 
