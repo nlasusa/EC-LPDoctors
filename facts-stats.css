@@ -222,4 +222,107 @@ body {
     background-color: #39b944; 
     opacity: 0.8; 
   }
+  #stats {
+    text-align: center; 
+    font-size: 27px; 
+    letter-spacing: 2px; 
+    font-weight: 300; 
+   }
+  
+   #bar1-title {
+     font-size: 16.5px; 
+     text-align: center; 
+     margin-top: 20px; 
+   }
+  
+  
+  .fa-circle {
+    margin-top: 19em; 
+    margin-left: -300px; 
+    padding-right: 10px; 
+  }
+  
+  #circle-minimum {
+    color: #0c6d14;
+    opacity: 0.8; 
+  }
+  
+  #circle-maximum {
+    color: #39b944; 
+    opacity: 0.8; 
+  }
+  
+  span {
+    color: black; 
+    font-family: 'Raleway';
+  
+  }
+
+  #bar1-sub {
+    text-align: center; 
+    font-size: 11px; 
+  }
+  .fa-copyright {
+    font-size: 9px; 
+    color: gray; 
+  }
   /* //  end of bar graph animation  */
+
+  /* // mobile bar graph animation  */
+  @media only screen and (max-width: 760px) {
+    #bar1-title {
+      font-size: 13px; 
+      text-align: center;
+    }
+    #stats {
+      margin-top: 10px; 
+    }
+    .fa-circle {
+      margin-left: -215px; 
+    }
+  }
+  /* end of mobile bar graph animation  */
+
+  /* /* // numbers count section  */
+.counter {
+  margin-top: -25px; 
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: 'Raleway'; 
+}
+
+.count-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px; 
+}
+
+.count-text {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  font-size: 20px; 
+  float: none;
+  display: table;
+  color: #007BFF; 
+}
+/* // numbers count section */
+
+/* // numbers count mobile  */
+@media only screen and (max-width: 430px) {
+  .count-text {
+      font-size: 16px;
+  }
+  .count-title {
+      font-size: 28px; 
+  }
+}
+/* // end of numbers count section mobile //  */
+
+ 

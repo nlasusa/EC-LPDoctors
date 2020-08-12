@@ -50,13 +50,10 @@
 </div><br><br><br><br><br><br><br>
 <!-- // End of MMJ logo + heartbeat SVG + slogan header //  -->
 
-<div class="search-container">
-  <form action="/action_page.php">
-    <input type="text" placeholder="Search by Zip Code" name="search" autocomplete="off">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-</div>
-
+<div id="stats">STATS & FAQS</div>
+<div id="bar1-title">Medical Marijuana Retail Sales for the U.S. from 2018 to 2022 (in billion U.S. Dollars)</div>
+<div id="bar1-sub">Source: Marijuana Business Daily <i class="fa fa-copyright"></i>&nbsp;Statista</div>
+<!-- /* //  bar graph animation  */ -->
       <div id="bar-chart">
         <div class="graph">
           <ul class="x-axis">
@@ -75,50 +72,93 @@
           </ul>
           <div class="bars">
             <div class="bar-group">
-              <div class="bar bar-1 stat-1" style="height: 47%;">      
+              <div class="bar bar-1 stat-1" style="height: 45%;">    
+                3.7  
                 <span>4080</span>
               </div>
               <div class="bar bar-2 stat-2" style="height: 57%;">
+                4.5
                 <span>5680</span>
               </div>
             </div>
             <div class="bar-group">
               <div class="bar bar-4 stat-1" style="height: 57%;">
+                4.5
                 <span>6080</span>
               </div>
               <div class="bar bar-5 stat-2" style="height: 67%;">
+                5.5
                 <span>6880</span>
               </div>
             </div>
             <div class="bar-group">
-              <div class="bar bar-7 stat-1" style="height: 61%;">
+              <div class="bar bar-7 stat-1" style="height: 62%;">
+                4.9
                 <span>6240</span>
               </div>
-              <div class="bar bar-8 stat-2" style="height: 75%;">
+              <div class="bar bar-8 stat-2" style="height: 76%;">
+                6.1
                 <span>5760</span>
               </div>
             </div>
             <div class="bar-group">
               <div class="bar bar-10 stat-1" style="height: 66%;">
+                5.4
                 <span>3520</span>
               </div>
               <div class="bar bar-11 stat-2" style="height: 85%;">
+                6.8
                 <span>5120</span>
               </div>
             </div>
             <div class="bar-group">
               <div class="bar bar-13 stat-1" style="height: 70%;">
+                5.9
                 <span>2240</span>
               </div>
               <div class="bar bar-14 stat-2" style="height: 91%;">
+                7.3
                 <span>2640</span>
               </div>
+
+              <i class="fas fa-circle" id="circle-maximum"><span max>&nbsp; Maximum</span></i>
+              <i class="fas fa-circle" id="circle-minimum"><span min>&nbsp; Minimum</span></i>
               
             </div>
           </div>
         </div>
       </div>
+<!-- /* //  end of bar graph animation  */ -->
 
+      <!-- // numbers count section  -->
+      <div class="row text-center">
+  
+        <div class="col">
+          <div class="counter">
+            <i class="fas fa-cannabis fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+            <p class="count-text ">EXAMPLE</p>
+          </div>
+        </div>
+          
+        <div class="col">
+          <div class="counter">
+            <i class="fas fa-joint fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+            <p class="count-text ">EXAMPLE</p>
+          </div>
+        </div>
+                  
+        <div class="col">
+          <div class="counter">
+            <i class="fas fa-diagnoses fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+            <p class="count-text ">EXAMPLE</p>
+          </div>
+        </div>
+    
+      </div>
+      <!-- // end of numbers count section  -->
 
 </body>
        <!-- // JS -->
