@@ -1,0 +1,26 @@
+{
+  "name": "ec-lpdoctors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inde.html",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-winston": "^4.0.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlasusa/EC-LPDoctors.git"
+  },
+  "author": "Nathan Hill & Nicole Lasusa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlasusa/EC-LPDoctors/issues"
+  },
+  "homepage": "https://github.com/nlasusa/EC-LPDoctors#readme"
+}
