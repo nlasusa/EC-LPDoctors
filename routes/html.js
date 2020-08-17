@@ -1,6 +1,4 @@
-// const middleware = require("./middleware")
 const path = require("path");
-
 
 module.exports = app => {
 //=====================================================================================================
