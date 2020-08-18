@@ -4,27 +4,22 @@ const Schema = mongoose.Schema;
 
 var DoctorSchema = new Schema ({
 
-    firstname: {
+    firstName: {
         type: String,
     },
-    lastname: {
+    lastName: {
         type: String
     },
-    email: {
+    emailAddress: {
         type: String,
-        unique: true,
-        match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
-    },
-    username: {
-        type: String,
-        required: "Username is required."
+        unique: true
     },
     password: {
         type: String,
         trim: true,
         required: "Password is required."
     },
-    phonenumber: {
+    officePhone: {
         type: String,
         trim: true
     },
@@ -32,11 +27,11 @@ var DoctorSchema = new Schema ({
         type: String,
         trim: true
     },
-    address1: {
+    streetAddress1: {
         type: String,
         trim: true
     },
-    address2: {
+    streetAddress2: {
         type: String,
         trim: true
     },
@@ -52,13 +47,13 @@ var DoctorSchema = new Schema ({
         type: Number,
         trim: true
     },
-    activemember: {
+    activeMember: {
         type: Boolean
     },
-    recurring: {
+    recurringPayment: {
         type: Boolean
     },
-    membershipdate: {
+    membershipDate: {
         type: Date,
     },
     paymentinfo: {

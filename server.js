@@ -3,7 +3,7 @@
 require("dotenv").config();
 const app = require('./server-config')
 const mongoose = require("mongoose");
-const MONGODB_URI = "mongodb://localhost/dbfor_submarine_2";
+const MONGODB_URI = "mongodb://localhost/mj_doctor_db";
 
 // define our port both here and in production
 const port = process.env.PORT || 8000;
