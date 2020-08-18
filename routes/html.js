@@ -7,7 +7,7 @@ module.exports = app => {
 //   the express server, including our stylesheets and our image files.
 //=====================================================================================================
     
-    app.get("/", function(req, res) {
+    app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "index.html"));
     });
 
