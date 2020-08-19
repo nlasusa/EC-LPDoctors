@@ -63,7 +63,13 @@ const controller = {
             callback(response)
         })
     },
-
+    
+    //=====================================================================================================
+    //
+    //  This function fetches the full list of active doctors from the database and serves them back to 
+    //    the front-end to be processed and displayed.
+    //
+    //=====================================================================================================
     fetchAllDoctors : callback => {
         db.Doctor.find({})
         .then(response => {
