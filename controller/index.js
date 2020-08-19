@@ -4,8 +4,6 @@ const Doctor = require("../models/Doctor")
 
 // any DB functions will be written in this object here, and sent to the api routes to be used
 const controller = {
-
-
     //=====================================================================================================
     //
     //  This function creates a new doctor in the database using the db function we wrote to make sure the
@@ -48,6 +46,28 @@ const controller = {
                     body : theDoctor
                 })
             }
+        })
+    },
+
+    //=====================================================================================================
+    //
+    //  This function takes in an id from the front-end and looks up the id in the database, and returns 
+    //     its findings to the callback function. This only searches by ID, so is useful for clicks on 
+    //     a specific doctor to get more info - like from the doctor listing - where the ID can be 
+    //     provided within the button or link. 
+    //
+    //=====================================================================================================
+    findDoctor : (id, callback) => {
+        db.Doctor.findOne({_id: mongojs.ObjectId(id)})
+        .then(response => {
+            callback(response)
+        })
+    },
+
+    fetchAllDoctors : callback => {
+        db.Doctor.find({})
+        .then(response => {
+            callback(response)
         })
     }
 }
