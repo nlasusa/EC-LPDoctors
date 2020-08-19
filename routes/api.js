@@ -14,11 +14,16 @@ const dummyData = require("../data.json")
 //=====================================================================================================
 module.exports = app => {
     
+//=====================================================================================================
+//  POST route to add a doctor to the database. **Only** doctor information  should be in req.body, 
+//    response will include a status message and a body. If the status message is error, the body 
+//    will contain the error message. If the status message is success, the body will contain 
+//    the new record. 
+//=====================================================================================================
     app.post("/api/doctors/add", (req,res) => {
-        // just putting this here for initial testing
-        console.log("Add a doctor")
-        console.log(req.body)
-        res.json(req.body)
+        API.createNewDoctor(req.body, response => {
+            res.json(response)
+        })
     })
 
     app.post("/api/doctors/findone", (req,res) => {

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-// const bcrypt = require("bcryptjs");
+const bcrypt = require("bcryptjs");
 
 var DoctorSchema = new Schema ({
 
@@ -60,11 +60,37 @@ var DoctorSchema = new Schema ({
         type: String,
         trim: true
     },
+    picture: {
+        type: String,
+        trim: true
+    },
 
 })
 
 const Doctor = module.exports = mongoose.model("Doctor", DoctorSchema)
 
-module.exports.getDoctorById = function(id, callback){
+module.exports.getDoctorById = (id, callback) => {
     Doctor.findById(id, callback);
-  }
+}
+
+module.exports.createNew = (doctorObj, callback) => {
+    bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(doctorObj.password, salt, (err, hash) => {
+            doctorObj.password = hash;
+            console.log(doctorObj)
+            try {
+                doctorObj.save(callback);
+            }
+            catch (err) {
+               throw (err)
+            }
+        });
+    });
+}
+
+module.exports.comparePassword = (candidatePassword, hash, callback) => {
+    bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
+        if(err) throw err;
+        callback(null, isMatch);
+    });
+}
