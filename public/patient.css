@@ -2,6 +2,41 @@
   background-image: none; 
 } */
 
+/* // patient nav bar  */
+.patient-nav-bar{
+  background-color: #e4e4e4; 
+  color: white; 
+  position: relative; 
+  text-align: center; 
+  top: 7px;
+  margin-bottom: 7px; 
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+}
+.patient-nav-bar a{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400; 
+  font-family: 'Raleway';
+  margin-left: 55px;
+  letter-spacing: 3px; 
+  color:  #007bff; 
+}
+.patient-nav-bar a:hover{
+  color: rgb(5, 134, 5);
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+@media only screen and (max-width: 730px) {
+  .patient-nav-bar a {
+    font-size: 10px;
+    margin-left: 12px; 
+    letter-spacing: 1px; 
+  }
+}
+/* // end of patient nav bar  */
+
 /* // first patient banner  */
 section {
     width: 100%;
@@ -39,7 +74,7 @@ section {
 
   span1 {
     color: #007bff; 
-    letter-spacing: 5px;
+    letter-spacing: 7px;
   }
 
   @media only screen and (max-width: 430px) {
@@ -131,7 +166,7 @@ section {
 }
 /* <!-- // end of collapsible section  --> */
 
-
+/* // See FAQS & Statistics link button */
 .seeFAQS {
   font-size: 20px; 
   text-align: center; 
@@ -144,3 +179,4 @@ section {
   cursor: pointer; 
   color: #007bff; 
 }
+/* // End of see FAQS & Statistics link button */

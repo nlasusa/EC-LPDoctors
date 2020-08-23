@@ -13,7 +13,7 @@ $("#doctor-signup").on('click', function(){
   window.location = "sign-up.html";
 });
 
-$(".seeFAQS").on('click', function(){
+$("#seeFAQS").on('click', function(){
 	window.location = "facts-stats.html";
   });
 // end of page navigation on click events// 
