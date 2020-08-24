@@ -35,6 +35,14 @@
     letter-spacing: 1px; 
   }
 }
+
+@media only screen and (max-width: 740px) {
+  .patient-nav-bar a {
+    font-size: 8.5px;
+    margin-left: 12px; 
+    letter-spacing: 1px; 
+  }
+}
 /* // end of patient nav bar  */
 
 /* // first patient banner  */
