@@ -1,0 +1,288 @@
+body {
+  background-image: none; 
+}
+
+/* PHOTO GRID COMMON ------------------------------ */
+
+.pdphotogrid {
+	display: flex;
+}
+.pdphotogrid .pdpgcolumngutter {
+  width: 12px;
+}
+
+/* Version of the photogrid to be displayed */
+  .pdphotogridtablet, .pdphotogridmobile {
+    display:none;
+}
+
+@media screen and (max-width: 840px) {
+  .pdphotogriddesktop {
+  display:none;
+}
+  .pdphotogridtablet {
+    display:flex;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .pdphotogridtablet {
+  display:none;
+}
+  .pdphotogridmobile {
+    display:flex;
+  }
+}
+
+/* Desktop Column Widths */
+.pdphotogriddesktop .pdpgcolumn1 {
+  width:25%;
+}
+.pdphotogriddesktop .pdpgcolumn2 {
+  width:50%;
+}
+.pdphotogriddesktop .pdpgcolumn3 {
+width:25%;
+}
+
+/* Tablet Columns Widths */
+.pdphotogridtablet .pdpgcolumn1 {
+  width:33.3%;
+}
+.pdphotogridtablet .pdpgcolumn2 {
+  width:33.3%;
+}
+.pdphotogridtablet .pdpgcolumn3 {
+width:33.3%;
+}
+
+/* Mobile Columns Widths */
+.pdphotogridmobile .pdpgcolumn1 {
+  width:50%;
+}
+.pdphotogridmobile .pdpgcolumn2 {
+  width: 50%;
+}
+
+/* PHOTO BOX ------------------------------ */
+
+.pdphotobox {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.pdphotobox figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+/*	margin: 10px 1%; */
+/*	min-width: 320px; */
+/*	max-width: 480px; */
+/*	max-height: 360px; */
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+  margin:0 0 12px 0;
+}
+
+.pdphotobox figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+
+.pdphotobox figure figcaption {
+	padding: 24px;
+	color: #fff;
+	text-transform: uppercase;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.pdphotobox figure figcaption::before,
+.pdphotobox figure figcaption::after {
+	pointer-events: none;
+}
+
+.pdphotobox figure figcaption,
+.pdphotobox figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pdphotobox figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.pdphotobox figure h2 {
+	font-family: 'Raleway';
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	line-height: 1em;
+	color: #fff;
+}
+
+.pdphotobox figure h2,
+.pdphotobox figure p {
+	margin: 0;
+	text-align:center;
+}
+
+.pdphotobox figure p {
+	letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 20px; 
+	line-height: 1.2em;
+}
+
+.pdphotoboxsmall figure h2 {
+    padding: 0 0 0 0;
+	font-size:28px;
+}
+
+.pdphotoboxmedium figure h2 {
+	font-size:28px;
+    padding: 0 0 0.1em 0;
+}
+
+.pdphotoboxlarge figure h2 {
+	font-size: 39px;
+    padding: 0.8em 0 0.3em 0;
+}
+
+/* pdfx hover effect */
+
+figure.effect-pdfx:hover {
+	background: #0e0e0e;
+}
+
+figure.effect-pdfx img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-pdfx:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-pdfx figcaption {
+	text-align: left;
+}
+
+figure.effect-pdfx h2 {
+	position: relative;
+	overflow: hidden;
+}
+
+figure.effect-pdfx:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-pdfx p {
+	padding: 0.25em 0 0 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-pdfx:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Borders */
+
+figure.effect-pdfx figcaption::before,
+figure.effect-pdfx figcaption::after {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	bottom: 12px;
+	left: 12px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-pdfx figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-pdfx figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-pdfx:hover figcaption::before,
+figure.effect-pdfx:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 984px) {
+.pdphotoboxmedium figure h2, .pdphotoboxsmall figure h2 {
+	font-size:26px;
+}
+}
+
+@media (max-width: 958px) {
+.pdphotoboxmedium figure h2, .pdphotoboxsmall figure h2 {
+	font-size:25px;
+}
+.pdphotobox figure p {
+	font-size: 18px;
+}
+}
+
+@media (max-width: 933px) {
+.pdphotoboxmedium figure h2, .pdphotoboxsmall figure h2 {
+	font-size:24px;
+}
+}
+
+@media (max-width: 908px) {
+.pdphotoboxmedium figure h2, .pdphotoboxsmall figure h2 {
+	font-size:23px;
+}
+}
+
+@media (max-width: 882px) {
+.pdphotoboxmedium figure h2, .pdphotoboxsmall figure h2 {
+	font-size:21px;
+}
+.pdphotoboxlarge figure h2 {
+	font-size: 38px;
+}
+}
+
+/* PHOTO BOX END ------------------------------ */
+

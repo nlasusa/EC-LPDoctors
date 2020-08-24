@@ -15,7 +15,11 @@ $("#doctor-signup").on('click', function(){
 
 $("#seeFAQS").on('click', function(){
 	window.location = "facts-stats.html";
-  });
+	});
+	
+	$("#seePartners").on('click', function(){
+		window.location = "advertisement.html";
+		});
 // end of page navigation on click events// 
 
 
