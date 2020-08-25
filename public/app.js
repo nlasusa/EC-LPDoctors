@@ -19,7 +19,11 @@ $("#seeFAQS").on('click', function(){
 	
 	$("#seePartners").on('click', function(){
 		window.location = "advertisement.html";
-		});
+	});
+
+	$("#seeLegalStates").on('click', function(){
+		window.location = "legalstates.html";
+	});
 // end of page navigation on click events// 
 
 

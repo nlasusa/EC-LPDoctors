@@ -1,0 +1,54 @@
+body {
+  background-image: none; 
+}
+
+.legal-header {
+    margin-top: 10px; 
+    margin-bottom: 5px;  
+    font-family: 'Raleway';
+    font-size: 50px; 
+    text-align: center; 
+    font-weight: 300; 
+    color: #0e9119;
+}
+  
+#content       
+{
+    width: 90.875%; /* 650/960 */
+    max-width: 960px;
+    text-align: center;
+    margin: 0px auto; /*auto centers the container */
+    padding: 3.84615384615385%; /* 25/650 */
+    margin-bottom: 20px; 
+}
+/*CSS3 multiple columns.*/
+/* Get em size for colums: 184/16 */   
+.columns
+{   
+    -moz-column-width: 11.5em; /* Firefox */
+    -webkit-column-width: 11.5em; /* webkit, Safari, Chrome */
+    column-width: 11.5em;
+}
+/*remove standard list and bullet formatting from ul*/
+.columns ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* correct webkit/chrome uneven margin on the first column*/
+.columns ul li:first-child
+{
+    margin-top:0px;
+}
+
+.columns li {
+  font-size: 16px; 
+  line-height: 50px; 
+  color: black; 
+}
+
+.columns li:hover { 
+  color:  #047dff; 
+  cursor: pointer; 
+}
