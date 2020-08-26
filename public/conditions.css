@@ -1,0 +1,271 @@
+.conditions-header {
+    margin-top: 10px; 
+    margin-bottom: 5px;  
+    font-family: 'Raleway';
+    font-size: 45px; 
+    text-align: center; 
+    font-weight: 300; 
+    color: #111111;
+}
+
+.conditions-subheader {
+    font-size: 23px; 
+    text-align: center; 
+    font-weight: 300; 
+}
+
+
+/* // Conditons Cards */
+.example {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 2rem 0;
+  }
+  .example::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .column {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+  }
+  .column:first-of-type {
+    left: 0;
+    box-shadow: 1rem 0 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
+  }
+  .column:last-of-type {
+    right: 0;
+    box-shadow: -1rem 0 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      display: none;
+    }
+  }
+  .card {
+    position: relative;
+    width: 40%;
+    padding: 3rem 1.5rem;
+    box-shadow: 0 0.3rem 0.5rem -0.1rem rgba(0, 0, 0, 0.1);
+    text-align: right;
+    background: #fff;
+    opacity:  0.8;
+    --triangle-width: 30%;
+  }
+  .card::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    bottom: 50%;
+    width: var(--triangle-width);
+    height: 50%;
+  }
+  .card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: var(--triangle-width);
+    height: 50%;
+  }
+  .card:nth-of-type(2n - 1) {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    text-align: left;
+  }
+  .card:nth-of-type(2n - 1)::before,
+  .card:nth-of-type(2n - 1)::after {
+    left: auto;
+    right: 100%;
+  }
+  .card:nth-of-type(2n - 1) > .title::after {
+    right: calc(100% + var(--triangle-width) / 3);
+    left: auto;
+    -webkit-transform: translateX(0.5rem) translateY(-50%);
+            transform: translateX(0.5rem) translateY(-50%);
+  }
+  .card:nth-of-type(1)::before {
+    background: -webkit-gradient(linear, right bottom, left top, from(#058605), color-stop(50%, #058605), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top left, #058605 0%, #058605 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(1)::after {
+    background: -webkit-gradient(linear, right top, left bottom, from(#159e15), color-stop(50%, #159e15), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom left, #159e15 0%, #159e15 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(1) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #2B3811;
+  }
+  .card:nth-of-type(2)::before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#007bff), color-stop(50%, #007bff), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top right, #007bff 0%, #007bff 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(2)::after {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0d4581), color-stop(50%, #0d4581), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom right, #0d4581 0%, #0d4581 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(2) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #705900;
+  }
+  .card:nth-of-type(3)::before {
+    background: -webkit-gradient(linear, right bottom, left top, from(#058605), color-stop(50%, #058605), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top left, #058605 0%, #058605 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(3)::after {
+    background: -webkit-gradient(linear, right top, left bottom, from(#159e15), color-stop(50%, #159e15), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom left, #159e15 0%, #159e15 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(3) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #1C3C49;
+  }
+  .card:nth-of-type(4)::before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#007bff), color-stop(50%, #007bff), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top right, #007bff 0%, #007bff 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(4)::after {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0d4581), color-stop(50%, #0d4581), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom right, #0d4581 0%, #0d4581 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(4) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #68310D;
+  }
+  .card:nth-of-type(5)::before {
+    background: -webkit-gradient(linear, right bottom, left top, from(#058605), color-stop(50%, #058605), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top left, #058605 0%, #058605 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(5)::after {
+    background: -webkit-gradient(linear, right top, left bottom, from(#159e15), color-stop(50%, #159e15), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom left, #159e15 0%, #159e15 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(5) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #1C3C49;
+  }
+  .card:nth-of-type(6)::before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#007bff), color-stop(50%, #007bff), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top right, #007bff 0%, #007bff 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(6)::after {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0d4581), color-stop(50%, #0d4581), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom right, #0d4581 0%, #0d4581 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(6) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #68310D;
+  }
+  .card:nth-of-type(7)::before {
+    background: -webkit-gradient(linear, right bottom, left top, from(#058605), color-stop(50%, #058605), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top left, #058605 0%, #058605 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(7)::after {
+    background: -webkit-gradient(linear, right top, left bottom, from(#159e15), color-stop(50%, #159e15), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom left, #159e15 0%, #159e15 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(7) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #1C3C49;
+  }
+
+  .card:nth-of-type(8)::before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#007bff), color-stop(50%, #007bff), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top right, #007bff 0%, #007bff 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(8)::after {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0d4581), color-stop(50%, #0d4581), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom right, #0d4581 0%, #0d4581 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(8) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #68310D;
+  }
+
+  .card:nth-of-type(9)::before {
+    background: -webkit-gradient(linear, right bottom, left top, from(#058605), color-stop(50%, #058605), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top left, #058605 0%, #058605 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(9)::after {
+    background: -webkit-gradient(linear, right top, left bottom, from(#159e15), color-stop(50%, #159e15), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom left, #159e15 0%, #159e15 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(9) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #1C3C49;
+  }
+  .card:nth-of-type(10)::before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#007bff), color-stop(50%, #007bff), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to top right, #007bff 0%, #007bff 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(10)::after {
+    background: -webkit-gradient(linear, left top, right bottom, from(#0d4581), color-stop(50%, #0d4581), color-stop(51%, transparent), to(transparent));
+    background: linear-gradient(to bottom right, #0d4581 0%, #0d4581 50%, transparent 51%, transparent 100%);
+  }
+  .card:nth-of-type(10) > .title::after {
+    content: ' ';
+    text-shadow: 0 0 1px #68310D;
+  }
+  .card + .card {
+    margin-top: -4rem;
+  }
+  .card > .title {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 25px; 
+  }
+  .card > .title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + var(--triangle-width) / 3);
+    font-size: 3rem;
+    color: #fff;
+    z-index: 2;
+    -webkit-transform: translateX(-0.5rem) translateY(-50%);
+            transform: translateX(-0.5rem) translateY(-50%);
+  }
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 70%;
+    }
+    .card:nth-of-type(2n-1) {
+      -webkit-transform: translateX(40%);
+              transform: translateX(40%);
+    }
+    .card + .card {
+      margin-top: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 730px) {
+    .conditions-subheader {
+      font-size: 15px;
+      margin-bottom: -15px;  
+    }
+    .conditions-header {
+        margin-top:  10px;  
+        font-size: 35px; 
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .conditions-subheader {
+      font-size: 12px;
+      margin-bottom: -15px;  
+    }
+    .conditions-header {
+        margin-top:  10px;  
+        font-size: 30px; 
+    }
+}
+  /* // End of Conditons Cards  */
+  

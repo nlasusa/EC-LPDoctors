@@ -24,6 +24,9 @@ $("#seeFAQS").on('click', function(){
 	$("#seeLegalStates").on('click', function(){
 		window.location = "legalstates.html";
 	});
+	$("#seeConditions").on('click', function(){
+		window.location = "conditions.html";
+	});
 // end of page navigation on click events// 
 
 
