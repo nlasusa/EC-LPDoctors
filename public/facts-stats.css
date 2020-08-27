@@ -270,7 +270,7 @@ body {
   /* // mobile bar graph animation  */
   @media only screen and (max-width: 430px) {
     .fa-circle {
-      margin-left: 60px;
+      margin-right: -60px;
     }
     #bar-num {
       font-size: 11px; 
