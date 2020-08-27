@@ -17,7 +17,7 @@ $("#seeFAQS").on('click', function(){
 	window.location = "facts-stats.html";
 	});
 	
-	$("#seePartners").on('click', function(){
+	$("#seeSponsors").on('click', function(){
 		window.location = "advertisement.html";
 	});
 
@@ -27,9 +27,15 @@ $("#seeFAQS").on('click', function(){
 	$("#seeConditions").on('click', function(){
 		window.location = "conditions.html";
 	});
+	$("#seeContact").on('click', function(){
+		window.location = "contact.html";
+	});
+	$("#seeAbout").on('click', function(){
+		window.location = "about.html";
+	});
 // end of page navigation on click events// 
 
-
+// accordian toggle on patient LP
 function toggleIcon(e) {
   $(e.target)
       .prev('.panel-heading')
@@ -38,9 +44,10 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
+// end of accoridan toggle on patient LP 
 
 
-// numbers count section on patient LP // 
+// numbers count section on patient stats & FAQS // 
 (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
@@ -139,4 +146,29 @@ jQuery(function ($) {
 	$this.countTo(options);
   }
 });
-// end of numbers count section on patient LP // 
+// end of numbers count section on patient stats & FAQS// 
+
+// patient contact form 
+$(document).ready(function(){
+	$('.form-input').on('keyup, paste, cut, focusout', function(){
+		var $parent = $(this).parents('.form-line');
+		var input_value = $.trim($(this).val());
+		var required = $(this).is(':required');
+
+		if (input_value.length > 0) {
+			$parent.find('label').addClass('top');
+
+			$parent
+				.removeClass('error')
+				.addClass('success');
+		}	else {
+			$parent.find('label').removeClass('top');
+			$parent.removeClass('success')
+
+			if (required) {
+				$parent.addClass('error');
+			}
+		}
+	});
+});
+// end of patient contact form 

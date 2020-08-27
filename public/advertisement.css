@@ -2,6 +2,30 @@ body {
   background-image: none; 
 }
 
+.sponsors-heading {
+		margin-top: 0px; 
+    margin-bottom: 20px;  
+    font-family: 'Raleway';
+    font-size: 45px; 
+    text-align: center; 
+    font-weight: 300; 
+    color: #007bff; 
+}
+
+@media only screen and (max-width: 730px) {
+	.sponsors-heading {
+			margin-top:  10px;  
+			font-size: 35px; 
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.sponsors-header {
+			margin-top:  10px;  
+			font-size: 30px; 
+	}
+}
+
 /* PHOTO GRID COMMON ------------------------------ */
 
 .pdphotogrid {
@@ -16,13 +40,13 @@ body {
     display:none;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 950px) {
   .pdphotogriddesktop {
   display:none;
 }
-  .pdphotogridtablet {
-    display:flex;
-  }
+.pdphotogridmobile {
+	display:flex;
+}
 }
 
 @media screen and (max-width: 630px) {
@@ -165,7 +189,7 @@ width:33.3%;
 /* pdfx hover effect */
 
 figure.effect-pdfx:hover {
-	background: #0e0e0e;
+	background: rgb(5, 134, 5);
 }
 
 figure.effect-pdfx img {
