@@ -28,6 +28,16 @@
   cursor: pointer; 
 }
 
+.cannabinoid-learn-more, .terpenes-learn-more, .cann-terp-diff-learn-more{
+  font-size: 14px; 
+  color: #007bff; 
+}
+
+.cannabinoid-learn-more:hover, .terpenes-learn-more:hover, .cann-terp-diff-learn-more:hover {
+  cursor: pointer; 
+  color: #034c9b; 
+}
+
 @media only screen and (max-width: 730px) {
   .patient-nav-bar a {
     font-size: 10px;

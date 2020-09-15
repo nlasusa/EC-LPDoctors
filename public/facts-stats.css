@@ -338,4 +338,65 @@ body {
 }
 /* // end of numbers count section mobile //  */
 
- 
+main {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.terpenes-boxes-1 {
+  background-color: rgb(1, 28, 102);
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-2 {
+  background-color: #0c6d14;
+  height: 200px;
+  width: 100%;
+}
+
+#pine {
+  margin-top: 50px; 
+  margin-left: 50px;  
+}
+
+.terpenes-boxes-3 {
+  background-color: rgb(49, 49, 49); 
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-4 {
+  background-color: rgb(243, 243, 243);
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-5 {
+  background-color: #39b944; 
+  height: 200px;
+  width: 100%;
+}
+
+#lemon {
+  margin-top: 55px; 
+  margin-left: 50px;  
+}
+
+#spice {
+  margin-top: 55px; 
+  margin-left: 50px;   
+}
+
+#flower {
+  margin-top: 55px; 
+  margin-left: 50px;  
+}
+
+#fruit {
+  margin-top: 55px; 
+  margin-left: 50px;  
+}
