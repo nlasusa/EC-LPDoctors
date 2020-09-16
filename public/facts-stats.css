@@ -430,3 +430,15 @@ main {
     font-size:  20px;  
   }
 }
+
+@media only screen and (max-width: 430px) {
+  #terpenes-calm {
+    margin-left: 70px; 
+    font-size:  18px;  
+  }
+  
+  #terpenes-energy {
+    margin-right: 70px; 
+    font-size:  18px;  
+  }
+}
