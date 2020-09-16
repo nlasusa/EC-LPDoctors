@@ -1,0 +1,23 @@
+body {
+    background-image: none; 
+  } 
+  
+  .doctor-portal-container {
+    width: 900px; 
+    margin: 0 auto; 
+    padding: 100px; 
+    border: 1px solid gray; 
+    background-color: #0e9119;
+    opacity: 0.85; 
+}
+
+#docBilling {
+    background-color:  #01520c; 
+    color: white;  
+    padding: 30px;  
+    text-align: center; 
+    font-size: 20px;  
+    font-weight: 400; 
+    font-family: 'Raleway';
+    width: 200px; 
+}
