@@ -359,7 +359,8 @@ main {
 }
 
 #pine {
-  margin-top: 65px; 
+  margin-top: 35px; 
+  padding-bottom: 15px; 
   margin-left: 62px;  
 }
 
@@ -370,7 +371,7 @@ main {
 }
 
 .terpenes-boxes-4 {
-  background-color: rgb(243, 243, 243);
+  background-color: #007BFF; 
   height: 200px;
   width: 100%;
 }
@@ -382,22 +383,31 @@ main {
 }
 
 #lemon {
-  margin-top: 65px; 
+  margin-top: 35px; 
+  padding-bottom: 15px; 
   margin-left: 62px;  
 }
 
 #spice {
-  margin-top: 65px; 
-  margin-left: 64px;   
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;    
+}
+
+#terp-types {
+  color: white; 
+  text-align: center; 
 }
 
 #flower {
-  margin-top: 65px; 
-  margin-left: 64px;  
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;  
 }
 
 #fruit {
-  margin-top: 65px; 
+  margin-top: 35px; 
+  padding-bottom: 15px; 
   margin-left: 62px;  
 }
 
