@@ -88,6 +88,22 @@ ul li {
       margin-left: 6em; 
     }
 }
+
+@media only screen and (max-width: 730px) {
+  #wrap {
+    margin: 3em;
+    margin-left: 6em; 
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #wrap {
+    margin: 3em;
+    margin-left: 3em; 
+  }
+}
+
+
   
 
 
