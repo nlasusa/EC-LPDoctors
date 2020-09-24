@@ -1,4 +1,23 @@
-.legal-blurb {
-    text-align: center;
-    margin-top: 40px; 
+  .legal-blurb {
+    background: rgb(58, 58, 58);
+    color: white; 
+    padding: 40px; 
+    margin: auto; 
+    width: 70%;
+    height: 100%;
+    margin-top: 35px; 
+    margin-bottom: 40px; 
+}
+
+.legal-subheader {
+    font-size: 31px;
+    letter-spacing: 5px; 
+    text-align: center; 
+    margin-top: -10px; 
+    font-weight: 300; 
+    color: #0e9119;
+}
+
+#legal-facts li {
+    padding-top: 20px; 
 }
