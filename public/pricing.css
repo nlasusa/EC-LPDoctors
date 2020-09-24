@@ -82,6 +82,12 @@ ul li {
     cursor: pointer; 
   }
   
+  @media only screen and (max-width: 730px) {
+    #wrap {
+      margin: 3em;
+      margin-left: 6em; 
+    }
+}
   
 
 
