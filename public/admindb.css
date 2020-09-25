@@ -296,3 +296,9 @@ color: #007BFF;
 }
 
 /* End statistics */
+
+@media only screen and (max-width: 430px) {
+  .header {
+    font-size: 1em;
+  }
+}
