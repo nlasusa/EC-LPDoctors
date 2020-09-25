@@ -35,6 +35,18 @@ $("#seeFAQS").on('click', function(){
 	});
 // end of page navigation on click events// 
 
+// patient LP on click events // not nav bar//
+$(".cannabinoid-learn-more").on('click', function(){
+	window.location = "facts-stats.html";
+});
+$(".terpenes-learn-more").on('click', function(){
+	window.location = "facts-stats.html";
+});
+$(".cann-terp-diff-learn-more").on('click', function(){
+	window.location = "facts-stats.html";
+});
+// end of patient LP on click events // not nav bar//
+
 // legal states on click events
 $("#alaska").on('click', function(){
 	window.location = "legalstates/alaska.html";
