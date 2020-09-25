@@ -35,6 +35,106 @@ $("#seeFAQS").on('click', function(){
 	});
 // end of page navigation on click events// 
 
+// legal states on click events
+$("#alaska").on('click', function(){
+	window.location = "../../legalstates/alaska.html";
+});
+$("#arizona").on('click', function(){
+	window.location = "../../legalstates/arizona.html";
+});
+$("#arkansas").on('click', function(){
+	window.location = "../../legalstates/arkansas.html";
+});
+$("#california").on('click', function(){
+	window.location = "../../legalstates/california.html";
+});
+$("#colorado").on('click', function(){
+	window.location = "../../legalstates/colorado.html";
+});
+$("#delaware").on('click', function(){
+	window.location = "../../legalstates/delaware.html";
+});
+$("#florida").on('click', function(){
+	window.location = "../../legalstates/florida.html";
+});
+$("#hawaii").on('click', function(){
+	window.location = "../../legalstates/hawaii.html";
+});
+$("#illinois").on('click', function(){
+	window.location = "../../legalstates/hawaii.html";
+});
+$("#louisiana").on('click', function(){
+	window.location = "../../legalstates/louisiana.html";
+});
+$("#maine").on('click', function(){
+	window.location = "../../legalstates/maine.html";
+});
+$("#massachusetts").on('click', function(){
+	window.location = "../../legalstates/massachusetts.html";
+});
+$("#maryland").on('click', function(){
+	window.location = "../../legalstates/maryland.html";
+});
+$("#michigan").on('click', function(){
+	window.location = "../../legalstates/michigan.html";
+});
+$("#minnesota").on('click', function(){
+	window.location = "../../legalstates/minnesota.html";
+});
+$("#missouri").on('click', function(){
+	window.location = "../../legalstates/missouri.html";
+});
+$("#montana").on('click', function(){
+	window.location = "../../legalstates/montana.html";
+});
+$("#nevada").on('click', function(){
+	window.location = "../../legalstates/nevada.html";
+});
+$("#newhampshire").on('click', function(){
+	window.location = "../../legalstates/newhampshire.html";
+});
+$("#newjersey").on('click', function(){
+	window.location = "../../legalstates/newjersey.html";
+});
+$("#newmexico").on('click', function(){
+	window.location = "../../legalstates/newmexico.html";
+});
+$("#newyork").on('click', function(){
+	window.location = "../../legalstates/newyork.html";
+});
+$("#northdakota").on('click', function(){
+	window.location = "../../legalstates/northdakota.html";
+});
+$("#ohio").on('click', function(){
+	window.location = "../../legalstates/ohio.html";
+});
+$("#oklahoma").on('click', function(){
+	window.location = "../../legalstates/oklahoma.html";
+});
+$("#oregon").on('click', function(){
+	window.location = "../../legalstates/oregon.html";
+});
+$("#pennsylvania").on('click', function(){
+	window.location = "../../legalstates/pennsylvania.html";
+});
+$("#rhodeisland").on('click', function(){
+	window.location = "../../legalstates/rhodeisland.html";
+});
+$("#utah").on('click', function(){
+	window.location = "../../legalstates/utah.html";
+});
+$("#vermont").on('click', function(){
+	window.location = "../../legalstates/vermont.html";
+});
+$("#washington").on('click', function(){
+	window.location = "../../legalstates/washington.html";
+});
+$("#westvirginia").on('click', function(){
+	window.location = "../../legalstates/westvirginia.html";
+});
+// end of legal states on click events 
+
+
 // accordian toggle on patient LP
 function toggleIcon(e) {
   $(e.target)
