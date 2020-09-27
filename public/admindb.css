@@ -123,7 +123,22 @@ background-image: url("assets/images/file.png");
 .menu ul li.icon-subscribers {
   background-image: url("assets/images/subscribe.png");
   }
+
+  .menu ul li.icon-dispensary {
+    background-image: url("assets/images/dispensary.png");
+    }
+
+    .menu ul li.icon-stats {
+      background-image: url("assets/images/stats.png");
+      }
   
+      .menu ul li.icon-conditions {
+        background-image: url("assets/images/conditions.png");
+        }
+
+        .menu ul li.icon-states {
+          background-image: url("assets/images/states.png");
+          }
 
 .menu ul li:hover {
 background-color: #007BFF; 
@@ -251,7 +266,7 @@ font-size: 2em;
 /* // end of doctor dashboard  */
 
 .statistics {
-margin-top: -550px;
+/* margin-top: -500px; */
 color: black;
 }
 
