@@ -30,6 +30,11 @@ font-family: 'Raleway';
 color: #fff;
 padding-left: 240px;
 }
+
+.statistics {
+  margin-top: -500px;
+}  
+
 main {
 position: relative;
 height: 100vh;
@@ -313,10 +318,10 @@ color: #007BFF;
 /* End statistics */
 
 @media only screen and (max-width: 430px) {
-  .helper {
+  main .helper {
     font-size: 27px; 
   }
   .statistics {
-    margin-top: -430px;
+    margin-top: -550px;
   }  
 }
