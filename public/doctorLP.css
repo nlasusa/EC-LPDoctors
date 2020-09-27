@@ -14,13 +14,12 @@ padding-left: 240px;
 
 main {
 position: relative;
-height: 100vh;
 }
 main .helper {
 background: #0c6d14; 
 color: #ffffff;
 position: absolute;
-top: 15%;
+top: 100px; 
 width: 800px; 
 left: 50%;
 transform: translate3d(-50%, -50%, 0);
@@ -240,7 +239,7 @@ body {
 
 @media screen and (max-width: 700px) {
 main .helper {
-top: 7%;
+top: 62px;
 width: 800px; 
 font-size: 2em;
 }
@@ -251,5 +250,107 @@ font-size: 2em;
 @media only screen and (max-width: 430px) {
   main .helper {
     font-size: 21px; 
+    margin-top: 0px;
   }
+}
+
+/* Start statistics */
+.statistics {
+  margin-top: 200px;
+  color: black;
+}
+.statistics .box {
+  background-color: #ebebeb;
+  margin-top: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.statistics .box:hover {
+  cursor: pointer; 
+  background-color: #d6d5d5;
+}
+
+.statistics .box > i {
+  float: left;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+}
+.statistics .box .info {
+  float: left;
+  width: auto;
+  margin-left: 10px;
+}
+.statistics .box .info h3 {
+  margin: 5px 0 5px;
+  display: inline-block;
+}
+.statistics .box .info p {color:black;}
+
+/* End statistics */
+
+/* Start statistics 2*/
+.statistics2 {
+  margin-top: 40px;
+  color: black;
+}
+.statistics2 .box {
+  background-color: #ebebeb;
+  padding: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.statistics2 .box:hover {
+  cursor: pointer; 
+  background-color: #d6d5d5;
+}
+.statistics2 .box > i {
+  float: left;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+}
+.statistics2 .box .info {
+  float: left;
+  width: auto;
+  margin-left: 10px;
+}
+.statistics2 .box .info h3 {
+  margin: 5px 0 5px;
+  display: inline-block;
+}
+.statistics2 .box .info p {color:black;}
+
+/* End statistics 2 */
+
+@media screen and (max-width: 700px) {
+  .statistics  {
+    margin-top: 120px;
+    }
+  
+  .statistics2  {
+  margin-top: 0px;
+  }
+}
+
+/* Start charts */
+.charts {
+  margin-top: 25px;
+  color: #BBB
+}
+.charts .chart-container {
+  background-color: #000000;
+  padding: 15px;
+}
+.charts .chart-container h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
 }
