@@ -291,3 +291,9 @@ main .helper {
 }
 
 /* End statistics */
+
+@media only screen and (max-width: 430px) {
+  main .helper {
+    font-size: 21px; 
+  }
+}
