@@ -51,6 +51,7 @@ text-align: center;
 }
 .menu .avatar img {
 width: 100px;
+background-color: white; 
 border-radius: 50%;
 overflow: hidden;
 border: 4px solid white;
