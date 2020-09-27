@@ -314,6 +314,9 @@ color: #007BFF;
 
 @media only screen and (max-width: 430px) {
   .header {
-    font-size: 1em;
+    font-size: 25px; 
   }
+  .statistics {
+    margin-top: -470px;
+  }  
 }
